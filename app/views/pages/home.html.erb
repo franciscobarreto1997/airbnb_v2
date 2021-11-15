@@ -1,2 +1,11 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home_page_container">
+  <div class="banner">
+    <h1>Book unique homes and experiences <br> all over the world.</h1>
+    <%= form_tag flats_path, method: :get, id: "search_form" do %>
+    <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Try 'Flats in Barcelona'"%>
+    <div id="blank">
+      <%= submit_tag "Search", id:"search_submit" %>
+    </div>
+    <% end %>
+  </div>
+</div>

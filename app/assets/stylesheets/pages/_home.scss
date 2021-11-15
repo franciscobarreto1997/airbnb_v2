@@ -1,1 +1,49 @@
-// Specific CSS for your home-page
+.home_page_container {
+  .banner {
+    width: 100vw;
+    height: 650px;
+    background: url("https://images.unsplash.com/photo-1611771341253-dadb347165a8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: white;
+      font-weight: 700;
+    }
+
+    #search_form {
+      width: 50%;
+      display: flex;
+
+      #query {
+        width: 84%;
+        padding: 35px;
+        font-size: 20px;
+        color: #767676;
+        font-weight: 300;
+        border: none;
+      }
+
+      #blank {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 16%;
+
+        #search_submit {
+          background-color: #ff5a5e;
+          border: 1px solid #ff5a5e;
+          border-radius: 4px;
+          padding: 10px 20px;
+          color: white;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
